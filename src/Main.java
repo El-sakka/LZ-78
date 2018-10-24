@@ -30,12 +30,12 @@ public class Main {
         fileWriter.flush();
         fileWriter.close();
 
-        FileReader fileReader1 = new FileReader("tags.txt");
+     /*   FileReader fileReader1 = new FileReader("tags.txt");
         int x = 0;
         while((x = fileReader1.read()) != -1){
-            
-        }
 
+        }
+*/
         DeCompress deCompress = new DeCompress(tags);
         deCompress.deCompress();
         deCompress.printDic();
